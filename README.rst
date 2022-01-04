@@ -32,19 +32,19 @@ self-contained script. There's no need for any imports or anything else in the
 file.
 
 Draw graphics (assuming there's  a file like ``images/dog.png`` or
-``images/dog.jpg``)::
+``images/dog.jpg``):: python
 
     def draw():
         screen.clear()
         screen.blit('dog', (10, 50))
 
-Play the sound ``sounds/eep.wav`` when you click the mouse::
+Play the sound ``sounds/eep.wav`` when you click the mouse:: python
 
     def on_mouse_down():
         sounds.eep.play()
 
 Draw an "actor" object (with the sprite ``images/alien.png``) that moves across
-the screen::
+the screen:: python
 
     alien = Actor('alien')
     alien.pos = 10, 10
